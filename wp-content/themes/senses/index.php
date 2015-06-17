@@ -28,6 +28,8 @@
     <script src="js/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/countries.js"></script>
+	<script type='text/javascript' src='js/jquery.validate.js'></script>
+	<script type='text/javascript' src='js/validate.js'></script>
     <script type='text/javascript' src='js/class.siteMain.js'></script>
 </head>
 <body>
@@ -74,7 +76,7 @@
                 <a href="javascript:void(0)" onclick="siteMain.scrolltoDiv('#contactForm')"></a>
             </div>
             <div class="contactForm" id="contactForm">
-                <form action="" method="">
+                <form action="" method="post" id="contactFormSubmit" enctype="multipart/form-data">
                     <h4>
                         Leave your contact details
                     </h4>
@@ -91,7 +93,7 @@
                             <input name="u_email" type="text" value="" placeholder="Email" />
                         </div>
                         <div class="col col02">
-                            <input name="u_phone" type="text" value="" placeholder="Mobile phone" />
+                            <input name="u_phone" type="text" value="" min-length="8" max-length="15" placeholder="Mobile phone" />
                         </div>
                     </div>
                     <div class="row">
@@ -122,10 +124,14 @@
                     <div class="row">
                         <div class="fileUpload ">
                             <span>UPLOAD YOUR CV</span>
-                            <input type="file" class="upload" name="p_files">
+                            <input type="file" class="upload" name="p_files" id="p_files">
                         </div>
+						<span class="file_message error"></span>
                     </div>
                     <div class="row">
+						<?php wp_nonce_field('apply_cv','act_apply_cv');?>
+						<input name="action" type="hidden" class="action" value="user_contact_form"/>
+						<input name="ajaxurl" type="hidden" class="ajaxurl" value="<?php echo bloginfo('home').'/wp-admin/admin-ajax.php'; ?>"/>
                         <input type="submit" value="SUBMIT"/>
                     </div>
                 </form>
