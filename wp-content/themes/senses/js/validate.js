@@ -2,10 +2,19 @@ $(document).ready(function() {
 	$('#p_files').on( 'change', function() {
 	   myfile= $( this ).val();
 	   var filename = $(this)[0].files[0].name;
+	   var fsize = $(this)[0].files[0].size; //get file size
+	   console.log(fsize);
 	   var ext = myfile.split('.').pop();
 	   if(ext=="txt" || ext=="rtf" || ext=="pdf" || ext=="docx" || ext=="doc"){
-			$('.fileUpload').removeClass('error');
-		   $('.file_message').html('Your CV: '+filename).removeClass('error');
+	   	   if(fsize>716800) 
+	       {
+	       	 $('.file_message').html('File is too big, it should be less than 700KB.').removeClass('error');
+	         return false;
+	       }else{
+		       	$('.fileUpload').removeClass('error');
+			   	$('.file_message').html('Your CV: '+filename).removeClass('error');
+	       }
+		   
 	   } else{
 		   $('.file_message').addClass('error').html('Your file must be in Word (.doc or .docx), Text (.txt), Rich Text (.rtf) or PDF (.pdf) format');
 	   }

@@ -20,6 +20,8 @@ function contact_form(){
 	$filename = time().$_FILES['p_files']['name'];
 	$target_file = $upload_dir.basename($filename);
 	$validate = 0;
+	ini_set('upload_max_filesize', '10M');
+	ini_set('post_max_size', '10M');
 	if(move_uploaded_file($_FILES['p_files']['tmp_name'], $target_file )){
 		global $wpdb;	
 		$results = $wpdb->insert('wp_contact',
@@ -48,7 +50,7 @@ function contact_form(){
 		);
 		
 		if($results){
-			//send_new_subscriber($data['p_email']);
+			user_contact_form($u_name,$u_firstname,$u_email,$u_phone,$u_gender,$u_birthday,$u_postalcode,$u_country );
 			echo '1';
 			die();
 		}
