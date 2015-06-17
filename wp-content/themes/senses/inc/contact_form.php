@@ -10,6 +10,7 @@ function contact_form(){
 	$data['u_birthday'] = $_REQUEST['u_birthday'];
 	$data['u_postalcode'] = $_REQUEST['u_postalcode'];
 	$data['u_country'] = $_REQUEST['u_country'];
+	$data['p_files'] = $_FILES['p_files']['name'];
 	global $wpdb;	
 	//save file
 	$root = get_home_path();
@@ -17,9 +18,10 @@ function contact_form(){
 	if (!file_exists($upload_dir)) {
 		mkdir($upload_dir);
 	}
-	$filename = time().$_FILES['p_files']['name'];
+	$filename = time().$data['p_files'];
 	$target_file = $upload_dir.basename($filename);
 	$data['p_files'] = $fileName;
+	echo $data['p_files'];
 	if(move_uploaded_file($_FILES['p_files']['tmp_name'], $target_file )){
 		global $wpdb;	
 		$results = $wpdb->insert('wp_contact', $data);

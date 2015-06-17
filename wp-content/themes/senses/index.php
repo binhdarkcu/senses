@@ -116,8 +116,10 @@
                         <div class="col col02">
                             <select name="u_country" id="countries">
                                 <option value="0">Country</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Netherlands">Netherlands</option>
+								<option value="France">France</option>
+                                <option value="Luxembourg">Luxembourg</option>
                             </select>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 17, 2015 at 12:44 AM
+-- Generation Time: Jun 17, 2015 at 03:12 AM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -76,6 +76,34 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 (1, 1, 'Mr WordPress', '', 'https://wordpress.org/', '', '2015-06-17 07:36:33', '2015-06-17 07:36:33', 'Hi, this is a comment.\r\nTo delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.', 0, '1', '', '', 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wp_contact`
+--
+
+CREATE TABLE IF NOT EXISTS `wp_contact` (
+  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `u_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_firstname` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_email` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_phone` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_gender` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_birthday` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_postalcode` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `u_country` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `p_files` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `wp_contact`
+--
+
+INSERT INTO `wp_contact` (`id`, `u_name`, `u_firstname`, `u_email`, `u_phone`, `u_gender`, `u_birthday`, `u_postalcode`, `u_country`, `p_files`) VALUES
+(1, 'b', 'b', 'b@gmail.com', '123213321231', 'male', '06/02/2015', '2132131', 'Albania', ''),
+(2, 'binh', 'lam', 'binhdarkcu@gmail.com', '0967891344', 'female', '06/02/2015', '321321321', 'Antartica', '');
 
 -- --------------------------------------------------------
 

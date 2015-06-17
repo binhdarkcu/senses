@@ -85,7 +85,8 @@ $(document).ready(function() {
 			cache: false,
 			processData:false,
 			success: function(response) {
-				console.log('success');
+			console.log(response);
+				$('.file_message').html('Contact succesful!').removeClass('error');
 			}            
 		});
 	}));
