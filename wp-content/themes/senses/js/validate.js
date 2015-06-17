@@ -97,6 +97,7 @@ $(document).ready(function() {
 			success: function(response) {
 			console.log(response);
 				if(response == 1){
+					$('#contactFormSubmit')[0].reset();
 					$('.file_message').html('Contact succesful!').removeClass('error');
 				}
 			}            
