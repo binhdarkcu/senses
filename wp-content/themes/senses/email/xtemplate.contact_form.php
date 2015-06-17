@@ -9,7 +9,7 @@
                 $contact_name = $name;
 				//echo $contact_email;
                 $date = date('d-m-Y');
-                $parseTemplate	=	new XTemplate('xtemplate.actived.html');
+                $parseTemplate	=	new XTemplate('xtemplate.contact_form.html');
                 $parseTemplate->assign('name',$name);
 				$parseTemplate->assign('firstname',$firstname);
                 $parseTemplate->assign('email',$email);	
