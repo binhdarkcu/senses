@@ -1,0 +1,227 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.wraper{
+    background: #f0f0f0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 39px;
+    font-weight: 200;
+}
+/*UPLOAD BUTTON*/
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    padding: 14px 105px;
+    border: 1px solid #000;
+    display: inline-block;
+    cursor: pointer;
+    display: table;
+    margin: 0 auto;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    width: 352px;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 49px;
+}
+.fileUpload span{
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.fileUpload.error{
+    border-color: #ff0000;
+}
+.fileUpload:hover{
+    border-color: #d52b55;
+}
+    .fileUpload:hover span {
+        color: #d52b55;
+    }
+
+.arrowdown{
+    padding: 59px 0 45px;
+
+}
+.arrowdown a{
+    background: url(../images/arrow.png) no-repeat;
+    width: 53px;
+    height: 52px;
+    display: table;
+    margin: 0 auto;
+}
+.arrowdown a:hover{
+     background: url(../images/arrow-hover.png) no-repeat;
+}
+.staff h4{
+    text-align: center;
+}
+.staff h4 span{
+    display: block;
+}
+.staff ul{
+    padding-top: 32px;
+
+    display: table-cell;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.staff ul li{
+    display: inline-block;
+
+    margin-right: 34px;
+    text-align: center;
+    margin-left: 34px;
+}
+.staff ul li.last{
+    margin-right: 0;
+}
+.staff ul li div.imgbox{
+    width: 320px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+.staff ul li div.imgbox img{
+    position: absolute;
+
+    top:  50%;
+    left: 50%;
+    margin-top: -182px;
+    margin-left: -182px;
+}
+.staff ul li .name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 28px;
+    text-transform: uppercase;
+    padding-bottom: 9px;
+}
+.staff ul li span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #d52b55;
+}
+
+.contactForm{
+
+}
+.contactForm h4{
+    text-align: center;
+    padding-bottom: 35px;
+}
+.contactForm input[type="text"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 43px;
+    padding-left: 22px;
+    color: #999;
+    width: 341px;
+    outline: none;
+    border: 1px solid transparent;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+	color: #999;
+	font-weight: 400;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #999;
+	font-weight: 400;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #999;
+	font-weight: 400;
+}
+.contactForm input[type="text"].error{
+    border-color: #ff0000;
+}
+input[type="submit"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: #d52b55;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 15px 50px 13px;
+    display: table;
+    border: none;
+    margin: 3px auto;
+}
+.contactForm .row{
+    width: 775px;
+    display: table;
+    margin: 0 auto 25px;
+}
+.contactForm .row .col{
+    float: left;
+
+}
+.contactForm .row .col.col01{
+    margin-right: 27px;
+
+}
+.contactForm .row .col.birthdayCol{
+    position: relative;
+}
+.contactForm .row .col.birthdayCol .ui-datepicker-trigger{
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+#ui-datepicker-div{
+    top: 45px!important;
+    left: 0!important;
+    width: 100%;
+}
+
+footer{
+    padding: 80px 0 27px 0;
+
+}
+footer .copyright{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+select{
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  background: url(../images/arrow-select.png) 337px center #fff;
+  background-repeat: no-repeat;
+  font-size: inherit;
+  overflow: hidden;
+  padding-left: 18px;
+  color: #999;
+  outline: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 365px;
+  height: 43px;
+  border: 1px solid transparent;
+}
+

@@ -1,0 +1,36 @@
+@media only screen and (min-width: 767px) and (max-width: 1170px) {
+    .container{
+        width: 100%;
+    }
+    .staff ul li{
+        margin-bottom: 38px;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 900px) {
+    .staff h4 span{
+        display: inline;
+    }
+    .staff ul {
+        display: table;
+    }
+    .staff ul li{
+        margin: 0 auto 38px;
+        display: table;
+        float: none;
+    }
+}
+@media only screen and (min-width: 0) and (max-width: 795px) {
+    .contactForm .row{
+        width: 95%;
+    }
+    .contactForm .row .col{
+        width: 100%;
+    }
+    .contactForm .row .col.col01{
+        margin-right:0;
+        margin-bottom: 17px;
+    }
+    .contactForm input[type="text"]{
+        width: 97%;
+    }
+}

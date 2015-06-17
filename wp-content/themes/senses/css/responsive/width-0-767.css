@@ -1,0 +1,44 @@
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    body{
+        min-width: 460px;
+    }
+    .container{
+        width: 100%;
+    }
+    header .slogan{
+        font-size: 45px;
+    }
+    h4{
+        font-size: 35px;
+    }
+    .staff ul li{
+        margin-bottom: 38px;
+    }
+    .staff h4 span{
+        display: inline;
+    }
+    .staff ul {
+        display: table;
+    }
+    .staff ul li{
+        margin: 0 auto 38px;
+        display: table;
+        float: none;
+    }.contactForm .row{
+        width: 95%;
+    }
+    .contactForm .row .col{
+        width: 100%;
+    }
+    .contactForm .row .col.col01{
+        margin-right:0;
+        margin-bottom: 25px;
+    }
+    .contactForm input[type="text"]{
+        width: 97%;
+    }
+    select{
+        width: 100.7%;
+        background-position: 97% center;
+    }
+}
