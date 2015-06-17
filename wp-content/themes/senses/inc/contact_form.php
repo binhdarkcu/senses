@@ -49,13 +49,14 @@ function contact_form(){
 		
 		if($results){
 			//send_new_subscriber($data['p_email']);
-			$validate = 1;
+			echo '1';
+			die();
 		}
 		else{
-			$validate = 0;
+			echo '0';
+			die('Error upload file');
 		}
 	}else{
-		$validate = 0;
+		die('Error upload file');
 	}
-	return $validate;
 }
