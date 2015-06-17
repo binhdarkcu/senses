@@ -51,13 +51,6 @@ label.error{
 .fileUpload.error{
     border-color: #ff0000;
 }
-.fileUpload:hover{
-    border-color: #d52b55;
-}
-    .fileUpload:hover span {
-        color: #d52b55;
-    }
-
 .arrowdown{
     padding: 59px 0 45px;
 

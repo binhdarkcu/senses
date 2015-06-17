@@ -2,7 +2,7 @@ var siteMain = (function () {
     //INIT
     function init() {
         createDatepicker('#birthday');
-        getCountries();
+        //getCountries();
 	}
     function scrolltoDiv(idSelector) {
 		var targetOffset = $(idSelector).offset().top;

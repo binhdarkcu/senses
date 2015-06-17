@@ -4,6 +4,7 @@ $(document).ready(function() {
 	   var filename = $(this)[0].files[0].name;
 	   var ext = myfile.split('.').pop();
 	   if(ext=="txt" || ext=="rtf" || ext=="pdf" || ext=="docx" || ext=="doc"){
+			$('.fileUpload').removeClass('error');
 		   $('.file_message').html('Your CV: '+filename).removeClass('error');
 	   } else{
 		   $('.file_message').addClass('error').html('Your file must be in Word (.doc or .docx), Text (.txt), Rich Text (.rtf) or PDF (.pdf) format');
@@ -86,7 +87,9 @@ $(document).ready(function() {
 			processData:false,
 			success: function(response) {
 			console.log(response);
-				$('.file_message').html('Contact succesful!').removeClass('error');
+				if(response == 1){
+					$('.file_message').html('Contact succesful!').removeClass('error');
+				}
 			}            
 		});
 	}));
