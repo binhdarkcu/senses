@@ -8,7 +8,7 @@
                 <img src="images/banner.jpg" class="banner"/>
             </header>
             <div class="arrowdown">
-                <a href="javascript:void(0)" onclick="siteMain.scrolltoDiv('#staff')"></a>
+                <a href="javascript:void(0)"></a>
             </div>
             <div class="staff" id="staff">
                 <h4>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
             <div class="arrowdown">
-                <a href="javascript:void(0)" onclick="siteMain.scrolltoDiv('#contactForm')"></a>
+                <a href="javascript:void(0)"></a>
             </div>
             <div class="contactForm" id="contactForm">
                 <form action="" method="post" id="contactFormSubmit" enctype="multipart/form-data">

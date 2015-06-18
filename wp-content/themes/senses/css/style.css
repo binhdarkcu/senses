@@ -61,10 +61,9 @@ label.error{
     height: 52px;
     display: table;
     margin: 0 auto;
+    cursor: default;
 }
-.arrowdown a:hover{
-     background: url(../images/arrow-hover.png) no-repeat;
-}
+
 .staff h4{
     text-align: center;
 }
