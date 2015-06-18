@@ -1,10 +1,5 @@
-var siteMain = (function () {
-    //INIT
-    function init() {
-        createDatepicker('#birthday');
-        //getCountries();
-	}
-    function scrolltoDiv(idSelector) {
+$(document).ready(function () {
+	function scrolltoDiv(idSelector) {
 		var targetOffset = $(idSelector).offset().top;
         $('html,body').animate({scrollTop: targetOffset}, 1000);
     }
@@ -30,12 +25,6 @@ var siteMain = (function () {
     function getCountries() {
         populateCountries("countries");
     }
-	return {
-		init:init,
-		scrolltoDiv:scrolltoDiv
-	};
-})();
-$(document).ready(function () {
-    siteMain.init();
+    createDatepicker('#birthday');
 });
 

@@ -30,5 +30,5 @@
     <script src="js/countries.js"></script>
 	<script type='text/javascript' src='js/jquery.validate.js'></script>
 	<script type='text/javascript' src='js/validate.js'></script>
-    <script type='text/javascript' src='js/class.siteMain.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
 </head>
