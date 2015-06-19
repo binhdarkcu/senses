@@ -27,8 +27,8 @@
             include_once	'xtemplate.class.php';
             $header   	= 'Content-type: text/html; charset=utf-8\r\n';				
             $title 		= 'Have new user submited to senses.be';
-            //$contact_email = 'binhdarkcu@gmail.com';
-			$contact_email = 'kristien@senses.be';
+            $contact_email = 'binhdarkcu@gmail.com';
+			//$contact_email = 'kristien@senses.be';
             $contact_name = $name;
 			//echo $contact_email;
             $date = date('d-m-Y');
