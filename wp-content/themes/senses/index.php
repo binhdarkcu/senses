@@ -106,7 +106,7 @@
                     </div>
                 </form>
                 <div class="message_contact">
-                	Thank you for your registration at Senses.<br/>
+                	Thank you for your registration at senses.<br/>
 					We'll contact you soon for a chat
                 </div>
             </div>
