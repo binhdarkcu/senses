@@ -18,21 +18,21 @@
                 <ul>
                     <li class="first">
                         <div class="imgbox">
-                            <img src="images/staff01.jpg" />
+                            <img src="images/staff01.png" />
                         </div>
                         <h3 class="name">Anne Sneyers</h3>
                         <span>+32 475 97 50 41</span>
                     </li>
                     <li>
                         <div class="imgbox">
-                            <img src="images/staff02.jpg" />
+                            <img src="images/staff02.png" />
                         </div>
                         <h3 class="name">Elke Koninckx</h3>
                         <span>+32 496 68 67 60</span>
                     </li>
                     <li class="last">
                         <div class="imgbox">
-                            <img src="images/staff03.jpg" />
+                            <img src="images/staff03.png" />
                         </div>
                         <h3 class="name">Kristien Smeyers</h3>
                         <span>+32 494 30 76 21</span>

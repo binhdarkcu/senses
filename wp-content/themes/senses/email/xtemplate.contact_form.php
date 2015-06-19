@@ -23,7 +23,7 @@
                 return wp_mail($contact_email, $title, $parseTemplate->text('main'), $title);
             }
 
-        function alert_user_contact_form($name, $firstname,$useremail, $phone, $gender, $birthday,$postalcode, $country){
+        function alert_user_contact_form($name, $firstname,$useremail, $phone, $gender, $birthday,$postalcode, $country, $attachment){
             include_once	'xtemplate.class.php';
             $header   	= 'Content-type: text/html; charset=utf-8\r\n';				
             $title 		= 'Have new user submited to senses.be';
@@ -43,5 +43,5 @@
 			$parseTemplate->assign('country',$country);		
             $parseTemplate->assign('date',$date);    
             $parseTemplate->parse('main');	
-            return wp_mail($contact_email, $title, $parseTemplate->text('main'), $title);
+            return wp_mail($contact_email, $title, $parseTemplate->text('main'), $title, $attachment);
         }

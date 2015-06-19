@@ -50,7 +50,7 @@ function contact_form(){
 		);
 		
 		if($results){
-			alert_user_contact_form($u_name,$u_firstname,$u_email,$u_phone,$u_gender,$u_birthday,$u_postalcode,$u_country );
+			alert_user_contact_form($u_name,$u_firstname,$u_email,$u_phone,$u_gender,$u_birthday,$u_postalcode,$u_country, $upload_dir.$filename );
 			user_contact_form($u_name,$u_firstname,$u_email,$u_phone,$u_gender,$u_birthday,$u_postalcode,$u_country );
 			echo '1';
 			die();

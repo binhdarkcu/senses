@@ -101,12 +101,6 @@ label.error{
     overflow: hidden;
 }
 .staff ul li div.imgbox img{
-    position: absolute;
-
-    top:  50%;
-    left: 50%;
-    margin-top: -182px;
-    margin-left: -182px;
 }
 .staff ul li .name{
     font-family: 'Raleway', sans-serif;
