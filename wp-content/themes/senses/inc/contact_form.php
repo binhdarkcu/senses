@@ -17,7 +17,7 @@ function contact_form(){
 	if (!file_exists($upload_dir)) {
 		mkdir($upload_dir);
 	}
-	$filename = time().$_FILES['p_files']['name'];
+	$filename = $u_name.'-'.$_FILES['p_files']['name'];
 	$target_file = $upload_dir.basename($filename);
 	$validate = 0;
 	ini_set('upload_max_filesize', '10M');
@@ -50,6 +50,7 @@ function contact_form(){
 		);
 		
 		if($results){
+			alert_user_contact_form($u_name,$u_firstname,$u_email,$u_phone,$u_gender,$u_birthday,$u_postalcode,$u_country );
 			user_contact_form($u_name,$u_firstname,$u_email,$u_phone,$u_gender,$u_birthday,$u_postalcode,$u_country );
 			echo '1';
 			die();

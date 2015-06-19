@@ -3,8 +3,8 @@
     <div class="wraper">
         <div class="container">
             <header>
-                <a href="#" class="logo"><img src="images/logo.jpg"/></a>
-                <h3 class="slogan">Let's catch up on your career! </h3>
+                <a href="#" class="logo"><img src="images/logo.png"/></a>
+                <h3 class="slogan">Let's catch up on your career</h3>
                 <img src="images/banner.jpg" class="banner"/>
             </header>
             <div class="arrowdown">
@@ -13,10 +13,10 @@
             <div class="staff" id="staff">
                 <h4>
                     <span>We invite advertising and communication profiles</span>
-                    <span>to sit with us and have a chat.</span>
+                    <span>to sit with us and have a chat!</span>
                 </h4>
                 <ul>
-                    <li>
+                    <li class="first">
                         <div class="imgbox">
                             <img src="images/staff01.jpg" />
                         </div>
@@ -43,6 +43,7 @@
                 <a href="javascript:void(0)"></a>
             </div>
             <div class="contactForm" id="contactForm">
+            	<div class="loading"><img src="images/loading.gif"/></div>
                 <form action="" method="post" id="contactFormSubmit" enctype="multipart/form-data">
                     <h4>
                         Leave your contact details
@@ -60,7 +61,7 @@
                             <input name="u_email" type="text" value="" placeholder="Email" />
                         </div>
                         <div class="col col02">
-                            <input name="u_phone" type="text" value="" min-length="8" max-length="15" placeholder="Mobile phone" />
+                            <input name="u_phone" type="text" value="" min-length="8" max-length="15" placeholder="Mobile Number" />
                         </div>
                     </div>
                     <div class="row">
@@ -78,7 +79,7 @@
                     </div>
                     <div class="row">
                         <div class="col col01">
-                            <input name="u_postalcode" type="text" value="" placeholder="Postal code" />
+                            <input name="u_postalcode" type="text" value="" placeholder="Postal Code" />
                         </div>
                         <div class="col col02">
                             <select name="u_country" id="countries">
@@ -104,6 +105,10 @@
                         <input type="submit" value="SUBMIT"/>
                     </div>
                 </form>
+                <div class="message_contact">
+                	Thank you for your registration at Senses.<br/>
+					We'll contact you soon for a chat
+                </div>
             </div>
             <footer>
                 <div class="copyright">

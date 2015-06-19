@@ -76,6 +76,7 @@ $(document).ready(function() {
 		},
 	});
 	$("#contactFormSubmit").on('submit',(function(e){
+		$('#contactForm').find('.loading').show();
 		$form = $(this);
 		$u_name = $form.find('input[name=u_name]').val();
 		$u_firstname = $form.find('input[name=u_firstname]').val();
@@ -95,10 +96,10 @@ $(document).ready(function() {
 			cache: false,
 			processData:false,
 			success: function(response) {
-			console.log(response);
 				if(response == 1){
-					$('#contactFormSubmit')[0].reset();
-					$('.file_message').html('Contact succesful!').removeClass('error');
+					$('#contactFormSubmit').remove();
+					$('#contactForm').find('.loading').hide();
+					$('.message_contact').show().animate({'opacity':1},500);
 				}
 			}            
 		});

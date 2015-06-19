@@ -5,10 +5,10 @@ html, body{
     font-size: 14px;
 }
 .wraper{
-    background: #f0f0f0;
+    background: #f7f7f7;
 }
 .container{
-    width: 1170px;
+    width: 1100px;
     margin: 0 auto;
 }
 h4{
@@ -81,9 +81,12 @@ label.error{
 .staff ul li{
     display: inline-block;
 
-    margin-right: 34px;
+    margin-right: 32px;
     text-align: center;
-    margin-left: 34px;
+    margin-left: 32px;
+}
+.staff ul li.first{
+	margin-left: 0;
 }
 .staff ul li.last{
     margin-right: 0;
@@ -121,7 +124,7 @@ label.error{
 }
 
 .contactForm{
-
+  position: relative;
 }
 .contactForm h4{
     text-align: center;
@@ -236,6 +239,26 @@ select.error{
 	  padding-top: 10px;
 	  clear: both;
 	  display: block;
+}
+.loading{
+	  position: absolute;
+  top: 50%;
+  margin-top: -21px;
+  left: 50%;
+  margin-left: -21px;
+  z-index: 100;
+  display: none;
+}
+.message_contact{
+	opacity: 0;
+	display: none;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 .file_message.error{
 	  
